@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>COURSE REGISTRATION</title>
+<script language="javascript">
+function validateForm() {
+document.getElementById('display').innerHTML="Firstname: " + document.myForm.fname.value +"Lastname:"+document.myForm.Lname.value+"Email-id:"+document.myForm.Ename.value+"Password:"+document.myForm.PASSname.value+"confirm password:"+document.myForm.PASS1name.value;
+    
+}
+</script>
+</head>
+<body>
+<style>
+body{
+background-image:url("file:///C:/Documents%20and%20Settings/Student/Desktop/mean%20stack/567.jpg");
+}
+</style>
+<h1 style="color:white; font-family:algerian;font-size:75;text-align:center"><b>LEARNFREE ACADEMY</b></h1>
+<h2 style="color:white; font-family:algerian;font-size:50;text-align:center"><b>SIGNUP</b></h2>
+<center>
+<form name="myForm" action="#" >
+<p id="display"></p>
+  Enter your First name:
+  <input type="text" name="fname">
+  <br><br>
+Enter your Last name:
+  <input type="text" name="Lname" >
+  <br><br>
+  Enter your Reg Email-id :
+ <input type="text" name="Ename">
+  <br><br>
+  Enter your Password:
+  <input type="text" name="PASSname">
+  <br><br>
+  Confirm ur Password
+  <input type="text" name="PASS1name">
+  <br><br> 
+I accept the terms and conditions: <input type="checkbox" id="myCheck" onclick="myFunction()">
+<br><br>
+<center><input type="submit" name="submit" value="Submit"  onclick="validateForm();return false;"></center>
+<br><br>
+</center>
+
+</form>
+</body>
+</html>

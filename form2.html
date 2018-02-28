@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>FORM 2</title>
+<body>
+<style>
+body{
+background-image:url("file:///C:/Documents%20and%20Settings/Student/Desktop/mean%20stack/567.jpg");
+}
+</style>
+<h1 style="color:white; font-family:algerian;font-size:75;text-align:center"><b>REGISTRATION</b></h1>
+<center><form action="/action_page.php">
+  Enter your name:
+  <input name="firstname" type="text">
+  <br><br>
+  Enter your Last name:
+  <input name="lastname" type="text">
+  <br><br>
+GENDER<br>
+  <input type="radio" name="gender" value="male"> Male<br>
+  <input type="radio" name="gender" value="female"> Female<br>
+  <input type="radio" name="gender" value="other"> Other
+</br>
+  Enter your DOB:
+  <input name="DOB" type="text">
+  <br><br>
+MECH: <input type="checkbox" id="myCheck" onclick="myFunction()">
+CSE: <input type="checkbox" id="myCheck" onclick="myFunction()">
+IT: <input type="checkbox" id="myCheck" onclick="myFunction()">
+ECE: <input type="checkbox" id="myCheck" onclick="myFunction()">
+AERO: <input type="checkbox" id="myCheck" onclick="myFunction()">
+BME: <input type="checkbox" id="myCheck" onclick="myFunction()">
+<br></br>
+
+<select multiple>
+  <option value="">None</option>
+  <option value="fluid mechanics">fluid mechanics</option>
+  <option value="operating system">operating system</option>
+  <option value="DBMS">DBMS</option>
+  <option value="DSP">DSP</option>
+<option value="Solid mechanics">solid mechanics</option>
+<option value="Biochemistry">biochemistry</option>
+</select>
+<br><br>
+<button type="button" onclick="alert('REGISTRATION SUCCESSFUL')">SUBMIT</button>
+</form>
+</body>
+</head>
+</html>
