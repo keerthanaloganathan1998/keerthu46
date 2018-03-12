@@ -1,0 +1,15 @@
+<!DOCTYPE HTML>
+<HTML>
+<title> HELLO HTML</title>
+<body>
+<script src="angular.min.js"></script>
+ <div ng-app="" >
+<p>Input something in the input box:</p>
+<p>Name : <input type="text" ng-model="firstname" placeholder="Enter name here"></p>
+
+<p>Name : <input type="text" ng-model="lastname" placeholder="Enter name here"></p>
+
+Full Name: {{firstname + " " + lastname}}
+</div>
+</body>
+</html>

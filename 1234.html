@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html ng-app="myApp" >
+<script src="angular.min.js"></script>
+<script>
+var app = angular.module('myApp', []);
+app.controller('myCtrl', function($scope) {
+    $scope.firstName = "";
+    $scope.lastName = "";
+  $scope.DOB="";
+    $scope.emailid = "";
+    $scope.Password = "";
+    $scope.confirmPassword = "";
+   $scope.gender="";
+ $scope.branch="";
+ $scope.subject="";
+
+
+});
+</script>
+<body>
+
+ <div ng-controller="myCtrl" >
+
+First Name: <input type="text" ng-model="firstName"><br>
+<br>
+Last Name: <input type="text" ng-model="lastName"><br>
+<br>
+Enter your DOB:
+  <input type="text"  ng-model="DOB" >
+  <br><br>
+emailid: <input type="text" ng-model="emailid"><br>
+<br>
+password: <input type="text" ng-model="Password"><br>
+<br>
+confirmpassword: <input type="text" ng-model="confirmPassword"><br>
+<br>
+  
+GENDER<br>
+  <input type="radio" ng-model="gender" value="male"> Male<br>
+  <input type="radio" ng-model="gender" value="female"> Female<br>
+  <input type="radio" ng-model="gender" value="other"> Other
+<br>
+</br>
+BRANCH<br>
+<br>
+MECH: <input type="checkbox" ng-model="branch"class="">
+CSE: <input type="checkbox" ng-model="branch1">
+IT: <input type="checkbox" ng-model="branch2">
+ECE: <input type="checkbox" ng-model="branch3">
+AERO: <input type="checkbox"ng-model="branch4">
+BME: <input type="checkbox" ng-model="branch5">
+<br></br>
+<select
+  <option  ng-model="subject"value="none">None</option>
+  <option ng-model="subject"value="fluid mechanics">fluid mechanics</option>
+  <option ng-model="subject" value="operating system">operating system</option>
+  <option ng-model="subject" value="DBMS">DBMS</option>
+  <option  ng-model="subject"value="DSP">DSP</option>
+<option   ng-model="subject"value="Solid mechanics">solid mechanics</option>
+<option  ng-model="subject" value="Biochemistry">biochemistry</option>
+</select>
+<br><br>
+
+<br><br>
+<h1>Full Name: {{firstName+ " "+lastName}}</h1>
+<h1>DOB: {{DOB}}</h1>
+<h1>Emailid:{{emailid}}</h1>
+<h1>password: {{Password}}</h1>
+<h1>confirmpassword: {{confirmPassword}}</h1>
+<h1>gender: {{gender}}</h1>
+<h1>branch: {{branch}}</h1>
+<h1>subject: {{subject}}</h1>
+</div>
+
+</body>
+</html>
